@@ -9,7 +9,7 @@
   <!-- Channel Message List -->
   <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
     {{#each messages as |m|}}
-      <Message @message={{m}}/>
+      <Message @message={{m}} @delete={{fn channelApi.deleteMessage m.id}}/>
     {{/each}}
   </div>
   <ChannelFooter @sendMessage={{channelApi.createMessage}} />

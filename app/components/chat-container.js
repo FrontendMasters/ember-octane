@@ -26,6 +26,19 @@ export default class ChatContainerComponent extends Component {
   }
 
   @action
+  async deleteMessage(messageId) {
+    const resp = await fetch(`/api/messages/${messageId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const messageIds = this.messages.map(m => m.id);
+    const idxToDelete = messageIds.indexOf(messageId);
+    this.messages.splice(idxToDelete, 1);
+    this.messages = this.messages; // necesary for @tracked
+  }
+  @action
   async createMessage(body) {
     const {
       channel: { id: channelId, teamId },
