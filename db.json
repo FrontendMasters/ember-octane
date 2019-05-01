@@ -222,7 +222,9 @@
       "channelId": "general",
       "userId": 1,
       "body": "awqwdqwqwdq",
-      "enrichedBody": ["awqwdqwqwdq"],
+      "enrichedBody": [
+        "awqwdqwqwdq"
+      ],
       "createdAt": 1555872270175,
       "id": 14
     },
@@ -569,6 +571,46 @@
       "userId": "1",
       "createdAt": 1556683077121,
       "id": 57
+    },
+    {
+      "teamId": "javascript",
+      "channelId": "funny",
+      "userId": "1",
+      "body": "hello JS",
+      "createdAt": 1556747343417,
+      "id": 58
+    },
+    {
+      "teamId": "javascript",
+      "channelId": "funny",
+      "userId": "1",
+      "body": "hello JS",
+      "createdAt": 1556747343417,
+      "id": 59
+    },
+    {
+      "teamId": "javascript",
+      "channelId": "funny",
+      "userId": "1",
+      "body": "hello JS (again)",
+      "createdAt": 1556747404891,
+      "id": 60
+    },
+    {
+      "teamId": "javascript",
+      "channelId": "funny",
+      "userId": "1",
+      "body": "asdsd",
+      "createdAt": 1556747543043,
+      "id": 61
+    },
+    {
+      "teamId": "javascript",
+      "channelId": "funny",
+      "userId": "1",
+      "body": "did it work?",
+      "createdAt": 1556747719879,
+      "id": 62
     }
   ]
 }

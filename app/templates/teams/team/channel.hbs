@@ -1,6 +1,6 @@
 <!-- Channel -->
 
-<ChatContainer @channel={{this.model}} as |messages|>
+<ChatContainer @channel={{this.model}} as |messages channelApi|>
 
   <ChannelHeader
     @title={{this.model.name}}
@@ -12,6 +12,6 @@
       <Message @message={{m}}/>
     {{/each}}
   </div>
-  <ChannelFooter />
+  <ChannelFooter @sendMessage={{channelApi.createMessage}} />
 
 </ChatContainer>
