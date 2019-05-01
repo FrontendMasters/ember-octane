@@ -1,18 +1,1 @@
-<TeamSelector />
-
-<TeamSidebar />
-<!-- Channel -->
-<main class="flex-1 flex flex-col bg-white overflow-hidden channel">
-
-  <ChannelHeader
-    @title="Frontend Chat"
-    @description="CSS and JS chat" />
-  {{format-timestamp "05-01-2019"}}
-  <!-- Channel Message List -->
-  <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
-    <Message />
-    <Message />
-    <Message />
-  </div>
-  <ChannelFooter />
-</main>
+{{outlet}}
