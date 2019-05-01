@@ -1,5 +1,6 @@
 <!-- Channel -->
-<main class="flex-1 flex flex-col bg-white overflow-hidden channel">
+
+<ChatContainer @channel={{this.model}} as |messages|>
 
   <ChannelHeader
     @title={{this.model.name}}
@@ -7,9 +8,10 @@
   {{format-timestamp "05-01-2019"}}
   <!-- Channel Message List -->
   <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
-    <Message />
-    <Message />
-    <Message />
+    {{#each messages as |m|}}
+      <Message @message={{m}}/>
+    {{/each}}
   </div>
   <ChannelFooter />
-</main>
+
+</ChatContainer>

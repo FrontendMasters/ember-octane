@@ -5,7 +5,7 @@ export default class TeamsTeamIndexRoute extends Route {
     await super.beforeModel(transition);
     const { id, channels } = this.modelFor('teams.team');
     if (channels.length > 0) {
-      this.replaceWith('teams.team.channel', id, channels[1].id);
+      this.replaceWith('teams.team.channel', id, channels[0].id);
     }
   }
 }
