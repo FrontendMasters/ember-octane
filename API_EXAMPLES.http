@@ -11,6 +11,9 @@ GET http://localhost:4200/api/teams HTTP/1.1
 ### Get a team (includes channels)
 GET http://localhost:4200/api/teams/li HTTP/1.1
 
+### Get a channel
+GET http://localhost:4200/api/teams/linkedin/channels/recruiting HTTP/1.1
+
 ### Get team channel messages
 GET http://localhost:4200/api/teams/li/channels/general/messages HTTP/1.1
 

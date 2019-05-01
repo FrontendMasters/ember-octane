@@ -37,12 +37,14 @@
         </svg>
       </button>
     </div>
-
-    <a href="/li/general" data-channel-id="general"
-      class="team-sidebar__channel-link py-1 px-4 text-white no-underline block opacity-75 bg-teal-dark">
-      <span aria-hidden="true">#</span>
-      general
-    </a>
+    {{#each @team.channels as |channel|}}
+      <LinkTo @model={{channel.id}} @route="teams.team.channel" data-channel-id={{channel.id}}
+        @activeClass="bg-teal-dark"
+        class="team-sidebar__channel-link py-1 px-4 text-white no-underline block opacity-75">
+        <span aria-hidden="true">#</span>
+        {{channel.name}}
+      </LinkTo>
+    {{/each}}
   </nav>
 
   <footer class="mx-4 mb-2 text-white">
