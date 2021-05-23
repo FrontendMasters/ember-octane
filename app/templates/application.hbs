@@ -2,7 +2,12 @@
 <TeamSidebar />
 <!-- Channel -->
 <main class="flex-1 flex flex-col bg-white overflow-hidden channel">
-  <ChannelHeader />
+
+  <ChannelHeader 
+    @title="frontend Chat" 
+    @description="CS & JS Chat"
+  />
+
 
   <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
     <ChatMessage />
