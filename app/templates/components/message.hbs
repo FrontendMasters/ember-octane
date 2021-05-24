@@ -1,38 +1,23 @@
-<TeamSelector />
-
-<TeamSidebar />
-
-<!-- Channel -->
-<main class="flex-1 flex flex-col bg-white overflow-hidden channel">
-
-  <ChannelHeader />
-
-  <!-- Channel Message List -->
-  <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
-
-    <Message />
-
     <!-- Message -->
     <div class="flex items-start px-6 py-2 text-sm hover-target hover:bg-grey-lightest message" role="listitem">
       <figure class="w-10 h-10 rounded overflow-hidden mr-3">
-        <img class="message__user-avatar"
-          src="https://en.gravatar.com/userimage/4584631/86f74019598950f6efd7b1b8e493259a.jpeg" alt="">
+        <img class="message__user-avatar" src="https://gravatar.com/avatar/96c332a96737c6668906232e39cb16ef?s=200"
+          alt="">
       </figure>
 
       <div class="flex-1">
         <h5 class="text-sm">
           <a href="#" class="message__user-name text-black font-bold no-underline hover:underline">
-            Mike North
+            Lisa Huang-North
           </a>
           <span class="sr-only">at</span>
           <time class="message__timestamp text-grey-darker text-xs font-normal">
-            Apr 21, 2019 12:23.4 PM
+            Apr 21, 2019 12:21.38 PM
           </time>
         </h5>
 
         <p class="message__body text-black leading-normal">
-          Hello developer, I looked at your profile and am impressed by your 14
-          years of COBOL experience. Are you happy in your current role?
+          Would you like to join my professional network?
         </p>
       </div>
 
@@ -42,10 +27,3 @@
         🗑
       </button>
     </div>
-
-  </div>
-
-  <ChannelFooter />
-</main>
-
-{{outlet}}
