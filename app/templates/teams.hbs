@@ -1,0 +1,15 @@
+<TeamSelector />
+<TeamSidebar />
+
+<!-- Channel -->
+<main class="flex-1 flex flex-col bg-white overflow-hidden channel">
+		<ChannelHeader @title="Running Group" @description="Let's talk about miles and marathons" />
+		{{format-timestamp "05-01-2019"}}
+
+  <!-- Channel Message List -->
+  <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
+				<ChatMessage />
+  </div>
+
+		<ChannelFooter />
+</main>
